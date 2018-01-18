@@ -1,0 +1,35 @@
+//
+//  PrefixHeader.pch
+//  sinaDemo
+//
+//  Created by wl on 2018/1/3.
+//  Copyright https://github.com/orzzh All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#ifdef  __OBJC__
+
+#import "SinaButton.h"
+#import "UIView+frame.h"
+#import "wlTranstionManager.h"
+#import "UIView+Gradient.h"
+#import "ToastManage.h"
+#endif
+
+#define WeakSelf      __weak typeof(self) weakSelf = self;
+#define SCREEN_WIDTH [UIScreen mainScreen].bounds.size.width
+#define SCREENH_HEIGHT [UIScreen mainScreen].bounds.size.height
+
+#define IPX ((SCREENH_HEIGHT >= 812) ? 34 : 0)
+#define IPX_NV ((SCREENH_HEIGHT >= 812) ? 88 : 64)
+#define COLOR_GR(x) [UIColor colorWithRed:0/255.0 green:0/255.0 blue:0/200.0 alpha:x]
+#define FONT @"PingFangSC-Regular"
+#define FONTSIZE(x) [UIFont fontWithName:FONT size:x]
+
+
+
+
+
+#endif /* PrefixHeader_pch */
